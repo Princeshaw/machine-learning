@@ -1,0 +1,52 @@
+<htm>
+    <head>
+    <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <!-- Material form login -->
+        <div class="container">
+            <div class="card">
+            
+              <h5 class="card-header info-color white-text text-center py-4 pt-4">
+                <strong>Enter the rview</strong>
+              </h5>
+            
+              <!--Card content-->
+              <div class="card-body px-lg-5 pt-4">
+            
+                <!-- Form -->
+                <form class="text-center" style="color: #757575;" action="/predict" method="post">
+            
+                  <!-- Email -->
+                  <div class="md-form">
+                    <label for="review">Enter your review</label>
+                    <input type="text" id="review" class="form-control" name="review">
+                    
+                  </div>
+            
+            
+                  <!-- Sign in button -->
+                  <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Submit</button>
+            
+             
+            
+                </form>
+                <!-- Form -->
+            
+              </div>
+              <br>
+        {{pred}}<br>
+            
+            </div>
+           </div> 
+        <!-- Material form login -->
+    </body>
+
+</html>
