@@ -39,10 +39,15 @@
             
                 </form>
                 <!-- Form -->
+                 <br>
+                 {% if 'positive' in pred %}
+                    <h2 style="color:green;">{{pred}}</h2><br>
+                {% else %}
+                    <h2 style="color:red;">{{pred}}</h2><br>
+                {% endif %}   
             
               </div>
-              <br>
-        {{pred}}<br>
+             
             
             </div>
            </div> 
